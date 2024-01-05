@@ -29,7 +29,7 @@ const page = () => {
       )
     });
   }
-
+// submit handler event
   const submitHandler = (e) => {
     e.preventDefault();
     if (editingIndex !== null) {
@@ -45,7 +45,7 @@ const page = () => {
     setTitle('');
     setDesc('');
   };
-
+// delete handler event
   const deleteHandler = (i) =>{
     let copyTask = [...mainTask]
     copyTask.splice(i,1)
